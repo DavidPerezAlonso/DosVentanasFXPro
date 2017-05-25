@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="174.0" prefWidth="248.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VentanaDosController">
+   <children>
+      <Label layoutX="71.0" layoutY="44.0" text="Ventana Secundaria" />
+      <Button fx:id="buttonclose" layoutX="91.0" layoutY="75.0" mnemonicParsing="false" onAction="#closeWindow" text="Cerrar" />
+   </children>
+</AnchorPane>
