@@ -33,8 +33,11 @@ public class Main extends Application {
             Scene scene = new Scene(rootPane);
             stagePrincipal.setTitle("Ventana Principal");
             stagePrincipal.setScene(scene);
+            /*
+             * Añadidos las llamadas del main al Controlador y del controlador al main ***/
             VentanaPrincipalController controller = loader.getController();
             controller.setProgramaPrincipal(this);
+
             stagePrincipal.show();
         } catch (IOException e) {
             //tratar la excepción.
@@ -45,6 +48,9 @@ public class Main extends Application {
         launch(args);
     }
 
+    /* Este método es llamado cuando se presiona el botón de la ventana principal
+     * Lo llama el controlador de la vista principal
+     */
     public static void mostrarVentanaSecundaria() {
         try {
             FXMLLoader loader = new FXMLLoader(Main.class.getResource("../vista/VentanaDos.fxml"));
@@ -54,8 +60,8 @@ public class Main extends Application {
             ventana.initOwner(stagePrincipal);
             Scene scene = new Scene(ventanaDos);
             ventana.setScene(scene);
-            VentanaDosController controller = loader.getController();
-            controller.setStagePrincipal(ventana);
+            VentanaDosController controller2 = loader.getController();
+            controller2.setStagePrincipal(ventana);
             ventana.show();
 
         } catch (Exception e) {

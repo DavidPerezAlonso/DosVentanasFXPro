@@ -26,6 +26,8 @@ public class VentanaPrincipalController implements Initializable {
         // TODO
     }
 
+    /* Cuando se pulsa el botón tendrá que abrir ventana nueva
+     * para eso llama al método del main */
     @FXML
     private void nuevaVentana(ActionEvent event) {
        	Main.mostrarVentanaSecundaria();
