@@ -60,13 +60,14 @@ public class Main extends Application {
             /* Creamos la segunda ventana como otro stage */
             Stage ventana = new Stage();
             ventana.setTitle("Venta Dos");
+            /* Le decimos a la ventana quién es la ventana original */
             ventana.initOwner(stagePrincipal);
             Scene scene = new Scene(ventanaDos);
             ventana.setScene(scene);
-           
+
             VentanaDosController controller2 = loader.getController();
             controller2.setStagePrincipal(ventana);
-            
+
             ventana.show();
 
         } catch (Exception e) {
