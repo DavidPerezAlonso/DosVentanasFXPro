@@ -53,7 +53,7 @@ public class Main extends Application {
     /* Este método es llamado cuando se presiona el botón de la ventana principal
      * Lo llama el controlador de la vista principal
      */
-    public static void mostrarVentanaSecundaria() {
+    public void mostrarVentanaSecundaria() {
         try {
             FXMLLoader loader = new FXMLLoader(Main.class.getResource("../vista/VentanaDos.fxml"));
             AnchorPane ventanaDos = (AnchorPane) loader.load();

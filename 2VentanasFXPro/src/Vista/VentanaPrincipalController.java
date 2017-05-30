@@ -4,7 +4,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import application.Main;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -30,6 +29,6 @@ public class VentanaPrincipalController implements Initializable {
      * para eso llama al método del main */
     @FXML
     private void nuevaVentana() {
-       	Main.mostrarVentanaSecundaria();
+       	this.ProgramaPrincipal.mostrarVentanaSecundaria();
     }
 }
